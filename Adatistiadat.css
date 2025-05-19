@@ -1,0 +1,459 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #0090FF;
+}
+
+:root {
+    --pr-color : #FFFB00;
+    --sc-color : #0090FF;
+    --trhd-color : #ffff;
+    --four-color : #005799;
+}
+
+/* Navbar */
+
+#hero {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0090FF, #005799);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.navbar-brand {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nav-link.active {
+    font-size: 18px;
+    font-weight: 600;
+}
+  
+.navbar .nav-link.active {
+    color: #FFFB00;
+  }
+
+.navbar {
+  background-color: #0090FF;
+}
+
+.btn-warning {
+    color: var(--sc-color);
+    background-color: #ffff;
+    border: none;
+    border-radius: 10px;
+    outline: 0;
+    font-weight: 600;
+    font-size: 18px;
+    height: 40px;
+    display: flex;
+    margin-left: 300px; /* Dorong ke kanan */
+    list-style: none;
+}
+
+.btn-warning:hover {
+  background-color: var(--pr-color);
+  color: var(--sc-color);
+}
+
+/* Home */
+#home-adat {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0090FF, #005799);
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+.adat-tagline {
+  display: flex;
+  justify-content: flex-end; /* dorong isi ke kanan */
+  padding: 10px;
+}
+
+  .adat-tagline h1 {
+  font-weight: 500;
+  color: #fff;
+  font-style: italic;
+  font-size: 134px;
+  z-index: 10;
+  max-width: 50%;
+  text-align: right;
+  padding: 10px;
+  line-height: 1;
+  margin-top: 0;      /* hilangkan margin default */
+  margin-bottom: 0;   /* supaya tidak makan ruang ke bawah */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+  .talent-adat {
+  position: absolute;
+  top: 0;
+  left: 0px; /* geser ke kanan dari kiri */
+  width: 100px; /* sesuaikan ukuran yang diinginkan */
+  height: auto; /* menjaga proporsi gambar */
+  z-index: 0;
+}
+
+/* Kekayaan Budaya Tradisi */
+
+#kekayaan {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0090FF, #005799);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .header-kekayaan {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  padding: 50px;
+  width: 350px; 
+  height: auto;
+  z-index: 1000;
+}
+
+.kekayaan-tagline {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* jika mau vertikal juga */
+  flex-direction: column; /* jika ada lebih dari 1 elemen di dalam */
+}
+
+.kekayaan-tagline h1 {
+  font-family: 'Rouge Script';
+  color: var(--pr-color);
+  text-align: center;
+  font-size: 64px;
+  padding: 20px;
+}
+
+.kekayaan-tagline p {
+  font-weight: 400;
+  color: #fff;
+  max-width: 70%;
+  font-size: 15px;
+  text-align: center;
+}
+
+.adat1 {
+  width: 400px;
+  padding: 10px;
+}
+
+.adat2 {
+  width: 450px;
+}
+
+/* Upacara Adat */
+
+#upacara {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0090FF, #005799);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .header-adat {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  padding: 50px;
+  width: 350px; 
+  height: auto;
+  z-index: 100;
+}
+
+.upacara-tagline h1 {
+  font-family: 'Rouge Script';
+  color: var(--pr-color);
+  position: absolute;
+  font-weight: 600;
+  font-size: 84px;
+  text-align: left;
+  top: 70px;
+  left: 90px;
+  padding: 50px;
+}
+
+.upacara-tagline p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  position: absolute;
+  top: 180px;
+  left: 70px;
+  padding: 80px;
+  max-width: 45%;
+}
+
+.upacara1 img {
+  width: 350px;
+  padding: 20px;
+}
+
+.upacara2 img {
+  width: 330px;
+}
+
+.upacara1 h2 {
+  font-family: 'Rouge Script';
+  color: #fff;
+  font-size: 13px;
+  text-align: left;
+  position: relative;
+  left: 100px;
+  top: 20px;
+}
+
+.upacara2 h2 {
+  font-family: 'Rouge Script';
+  color: #fff;
+  font-size: 13px;
+  text-align: left;
+  position: relative;
+  left: 450px;
+  top: 20px;
+}
+
+/* Busana */
+#busana {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0090FF, #005799);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+.header-busana {
+  position: absolute;
+  bottom: 10px;
+  right: 60px;
+  padding: 50px;
+  width: 350px; 
+  height: auto;
+  z-index: 100;
+}
+
+.model img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.busana-tagline2 h1 {
+  text-align: right;
+  font-family: 'Rouge Script';
+  color: var(--pr-color);
+  font-size: 64px;
+  font-weight: 600;
+  padding: 20px;
+  left: 0;
+  position: relative;
+}
+
+.busana-tagline2 p {
+  text-align: right;
+  color: #fff;
+  max-width: 70%;
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  left: 200px;
+}
+
+/* Penutup */
+
+#penutup-adat {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0090FF, #005799);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+.adat2-tagline h1 {
+  font-family: 'Rouge Script';
+  font-size: 124px;
+  font-weight: 700;
+  color: var(--pr-color);
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.adat2-tagline h2 {
+  font-family: 'Rouge Script';
+  font-size: 94px;
+  font-weight: 700;
+  color: var(--pr-color);
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.adat2-tagline p {
+  font-size: 12px;
+  font-weight:500;
+  color: #FFF;
+  max-width: 60%;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.adat2-tagline .logobesar {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 50;
+  width: 250px;
+  height: auto;
+  z-index: 100;
+}
+
+/* Footer */
+#footer {
+  min-height: 100vh;
+  position: relative;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-tagline h1 {
+  color: #FFF;
+  font-size: 54px;
+  max-width: 50%;
+  font-weight: 700;
+  padding-top: 90px;
+  padding-left: 50px;
+}
+
+.footer-tagline .logoatasbesar {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  padding: 50px;
+  width: 400px; 
+  height: auto;
+  z-index: 100;
+}
+
+.footer-tagline .hp {
+  padding-top: 50px;
+  padding-left: 50px;
+  font-size: 18px;
+}
+
+.hp a{
+  color: #FFF;
+    padding-left: 5%;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer-tagline .email {
+  padding-top: 0px;
+  padding-left: 50px;
+  font-size: 18px;
+}
+
+.email a{
+  color: #FFF;
+    padding-left: 5%;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer-tagline .alamat {
+  padding-top: 0px;
+  padding-left: 50px;
+  font-size: 18px;
+  gap: 12px;
+  align-items: flex-start;
+  max-width: 600;
+}
+
+.alamat a{
+  color: #FFF;
+  padding-left: 5%;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer-tagline h2 {
+  font-weight: 600;
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-tagline .pohon1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0px;
+  width: 100px; 
+  height: auto;
+  z-index: 1000;
+}
+
+.footer-tagline .pohon2 {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding: 0px;
+  width: 150px; 
+  height: auto;
+  z-index: 100;
+}
+
+.car-kontak {
+  max-width: 600px;
+  margin: 0 auto; /* agar rata tengah */
+  padding: 20px;
+}
+
+.form-control {
+  font-size: 16px;
+  height: 50px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 700px; /* atau ukuran sesuai desain */
+  box-sizing: border-box;
+}
+
+.button-kontak {
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--pr-color);
+  margin: auto;
+  height: 50px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 700px; /* atau ukuran sesuai desain */
+  box-sizing: border-box;
+}
+
+.button-kontak:hover {
+  background-color: greenyellow;
+  color: #000;
+}

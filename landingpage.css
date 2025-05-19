@@ -1,0 +1,650 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #0090FF;
+}
+
+:root {
+    --pr-color : #FFFB00;
+    --sc-color : #0090FF;
+    --trhd-color : #ffff;
+    --four-color : #005799;
+}
+
+/* Navbar */
+
+#hero {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0090FF, #005799);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.navbar-brand {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nav-link.active {
+    font-size: 18px;
+    font-weight: 600;
+}
+  
+.navbar .nav-link.active {
+    color: #FFFB00;
+  }
+
+.navbar {
+  background-color: #0090FF;
+}
+
+.btn-warning {
+    color: var(--sc-color);
+    background-color: #ffff;
+    border: none;
+    border-radius: 10px;
+    outline: 0;
+    font-weight: 600;
+    font-size: 18px;
+    height: 40px;
+    display: flex;
+    margin-left: 300px; /* Dorong ke kanan */
+    list-style: none;
+}
+
+.btn-warning:hover {
+  background-color: var(--pr-color);
+  color: var(--sc-color);
+}
+
+/* Hero Section */
+
+
+.hero-tagline h1{
+    color: white;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 70px;
+
+}
+
+/* Animasi H1 */
+
+.hero-tagline h1 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 2s ease-out forwards;
+  }
+  
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  .kota {
+    width: 400px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s ease-out forwards;
+  }
+  
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+/* H5 dan animasi */
+
+  .hero-tagline h5 {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100px;
+    text-align: center;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    animation: growFromCenter 2.5s ease forwards;
+  }
+  
+  @keyframes growFromCenter {
+    to {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+  }
+
+/* Button Mulai Jelajah */
+
+.button-mj-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* jarak antara teks dan gambar */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  color: var(--pr-color);
+  background-color: var(--pr-color);
+  animation: gradientMove 5s ease infinite;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-mj-primary:hover {
+  background-color: var(--pr-color);
+}
+
+.button-mj-primary {
+    border: none;
+    border-radius: 10px;
+    padding: 5px 30px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--four-color);
+    background-color: var(--pr-color);
+    animation: gradientMove 5s ease infinite;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-mj-primary:hover {
+    transform: scale(1.08); /* Membesar 8% */
+    box-shadow: 0 0 16px #FFF; /* Efek bayangan saat hover */
+  }
+
+  @keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Geografi */
+#geografi {
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(to bottom, #0090FF, #005799);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.geografi-tagline h1 {
+  color: #FFF;
+  font-size: 54px;
+  line-height: 100px;
+}
+
+.geografi-tagline h2 {
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  max-width: 800px;
+}
+
+.header-geografi {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  padding: 50px;
+  width: 350px; /* Sesuaikan ukuran logo */
+  height: auto;
+}
+
+/* Materi */
+#materi {
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(to bottom, #0090FF, #005799);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.background-materi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none; /* supaya tidak menghalangi klik */
+}
+
+.background-materi img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mask-image: linear-gradient(to top, black 40%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to top, black 40%, transparent 100%);
+}
+
+
+.header-materi {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  padding: 50px;
+  width: 350px; 
+  height: auto;
+  z-index: 1000;
+}
+
+.materi-tagline h1 {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  padding: 80px;
+  width: 0px;
+  height: auto;
+  z-index: 1000;
+}
+
+/* Card 3d */
+
+.card {
+  background: white;
+  border-radius: 0px;
+  padding: 30px;
+  width: 250px;
+  height: 500px;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  gap: 10px;
+}
+
+.container {
+  display: flex;
+  gap: 50px;               
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 0px;
+}
+
+.card h3 {
+  color: #003366;
+  margin: 30px 0;
+  font-size: 24px;
+  transition: color 0.3s;
+  max-width: fit-content;
+}
+
+.card:hover {
+  background-color: #fff200;
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover h3 {
+  color: #000;
+}
+
+/* Pulau */
+#pulau {
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(to bottom, #0090FF, #005799);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+ .pulau-box {
+      background-color: yellow;
+      color: black;
+      border-radius: 8px;
+      padding: 10px;
+      font-weight: bold;
+      width: max-content;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+    .lihat-detail {
+      display: block;
+      font-size: 0.9rem;
+      color: #000;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    .pulau-box:hover {
+      background-color: #FFF;
+    }
+
+    .pulau-box {
+    background-color: white;
+    color: #000; /* Warna biru Bootstrap */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.pulau-box:hover {
+    transform: scale(1.1);
+    background-color: var(--pr-color); /* Warna kuning Bootstrap */
+    color: #000; /* Warna teks jadi hitam */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+.pulau-box:hover .lihat-detail {
+  color: black;
+}
+
+.map-container {
+  position: relative;
+  top: 70px;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.peta-indonesia {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pulau {
+  position: absolute;
+      transform: translate(-50%, -50%);
+}
+
+.icon-lokasi {
+    margin-right: 6px;
+    font-size: 45px;
+    color: red;
+}
+
+/* Posisi tombol per pulau (atur sesuai gambar) */
+.sumatera { top: 35%; left: 20%; }
+.kalimantan { top: 20%; left: 35%; }
+.jawa { top: 55%; left: 32%; }
+.sulawesi { top: 35%; left: 55%; }
+.papua { top: 25%; left: 95%; }
+.flores { top: 65%; left: 70%; }
+
+    /* Animasi */
+/* Tambahan: animasi ikon saat hover */
+.pulau-box .icon-lokasi {
+  transition: transform 0.3s ease;
+}
+
+.pulau-box:hover .icon-lokasi {
+  transform: scale(1.3); /* Membesarkan ikon */
+}
+
+.pulau-box .icon-lokasi {
+  color: red;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.pulau-box:hover .icon-lokasi {
+  transform: scale(1.3);
+  color: black;
+}
+
+/* Teks */
+.pulau-tagline h1 {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 600;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  padding: 50px;
+  width: 550px;
+  height: auto;
+  z-index: 100;
+}
+
+.header-pulau {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  padding: 50px;
+  width: 350px; 
+  height: auto;
+  z-index: 100;
+}
+
+.lihat-detail {
+  font-weight: 300;
+  font-size: px;
+}
+
+.pulau-tagline p {
+  font-size: 12px;
+  font-weight: 0;
+  text-align: center;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+}
+
+/* Penutup */
+#penutup {
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(to bottom, #0090FF, #005799);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.penutup-tagline h1 {
+  font-size: 74px;
+  font-weight: 700;
+  color: #FFF;
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.penutup-tagline h2 {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 20px;
+  color: var(--pr-color);
+}
+
+.penutup-tagline p {
+  font-size: 12px;
+  font-weight:500;
+  color: #FFF;
+  max-width: 60%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.penutup-tagline .map2 {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding: 0px;
+  width: 350px; 
+  height: auto;
+  z-index: 100;
+}
+
+.penutup-tagline .map1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0px;
+  width: 350px; 
+  height: auto;
+  z-index: 100;
+}
+
+.penutup-tagline .logobesar {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 50;
+  width: 250px;
+  height: auto;
+  z-index: 100;
+}
+
+/* footer */
+#footer {
+  min-height: 100vh;
+  position: relative;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-tagline h1 {
+  color: #FFF;
+  font-size: 54px;
+  max-width: 50%;
+  font-weight: 700;
+  padding-top: 90px;
+  padding-left: 50px;
+}
+
+.footer-tagline .logoatasbesar {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  padding: 50px;
+  width: 400px; 
+  height: auto;
+  z-index: 100;
+}
+
+.footer-tagline .hp {
+  padding-top: 50px;
+  padding-left: 50px;
+  font-size: 18px;
+}
+
+.hp a{
+  color: #FFF;
+    padding-left: 5%;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer-tagline .email {
+  padding-top: 0px;
+  padding-left: 50px;
+  font-size: 18px;
+}
+
+.email a{
+  color: #FFF;
+    padding-left: 5%;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer-tagline .alamat {
+  padding-top: 0px;
+  padding-left: 50px;
+  font-size: 18px;
+  gap: 12px;
+  align-items: flex-start;
+  max-width: 600;
+}
+
+.alamat a{
+  color: #FFF;
+  padding-left: 5%;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer-tagline h2 {
+  font-weight: 600;
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-tagline .pohon1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0px;
+  width: 100px; 
+  height: auto;
+  z-index: 1000;
+}
+
+.footer-tagline .pohon2 {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding: 0px;
+  width: 150px; 
+  height: auto;
+  z-index: 100;
+}
+
+.car-kontak {
+  max-width: 600px;
+  margin: 0 auto; /* agar rata tengah */
+  padding: 20px;
+}
+
+.form-control {
+  font-size: 16px;
+  height: 50px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 700px; /* atau ukuran sesuai desain */
+  box-sizing: border-box;
+}
+
+.button-kontak {
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--pr-color);
+  margin: auto;
+  height: 50px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 700px; /* atau ukuran sesuai desain */
+  box-sizing: border-box;
+}
+
+.button-kontak:hover {
+  background-color: greenyellow;
+  color: #000;
+}

@@ -1,0 +1,73 @@
+@media screen  and (max-width : 922px) {
+
+}
+
+@media screen  and (max-width : 576px) {
+    .hero-tagline h1 {
+        font-size: 34px;
+        padding: 10px;
+        line-height: 24px;
+    }
+    .hero-tagline h5 {
+        font-size: 12px;
+        padding: 10px;
+        line-height: 24px;
+    }
+    
+    .kota {
+        bottom: 0px;
+        width: 40%;
+        height: auto;
+    }
+
+    .button-mj-primary {
+        width: 50%;
+        font-size: 18px;
+        height: auto;
+    }
+
+    .button-mj-primary img {
+        width: 20%;
+    }
+
+    .geografi-tagline h1 {
+        font-size: 34px;
+        font-weight: 500;
+        padding: 10px;
+        z-index: 10;
+    }
+
+    .geografi-tagline h2 {
+        font-size: 15px;
+        max-width: 80%;
+    }
+
+    .header-geografi {
+        padding: 10px;
+        right: 20px;
+        width: 200px;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    }
+
+  .card {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 50%;
+    height: auto;
+  }
+
+}
+
+@media screen  and (max-width : 350px) {
+    
+}
